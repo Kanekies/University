@@ -14,10 +14,10 @@
 
         Sets::Sets(set<int> set_, int n){
             numbers.clear();
-            set<int> :: iterator it = set_.begin();
-            for(int i = 0; i < n; i++){
-                numbers.insert(*(it));
-                it++;
+            for(set<int> ::iterator i = set_.begin(); i != set_.end(); i++)
+            {
+                if(*(i)<=n)
+                    numbers.insert(*(i));
             }
         }
 
@@ -30,7 +30,6 @@
             it--;
             return *(it);
         }
-
 
         void Sets::Print(){
             for(set<int> ::iterator i = numbers.begin(); i != numbers.end(); i++)

@@ -14,7 +14,7 @@ using namespace std;
         }
         void Time::SetHour(int a){
             int time = (hours+a)*3600 + minutes * 60 + seconds;
-            if(time<0)
+            if(time<0|| time > 86399)
                 cout<<"Error";
             else{
                 seconds = time % 60;
@@ -24,7 +24,7 @@ using namespace std;
         }
         void Time::SetMinutes(int a){
             int time = hours * 3600 + (minutes+a) * 60 + seconds;
-            if(time<0)
+            if(time<0|| time > 86399)
                 cout<<"Error";
             else{
                 seconds = time % 60;
