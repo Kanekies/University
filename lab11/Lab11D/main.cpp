@@ -15,5 +15,30 @@ int main()
     set_1.Print();
     set_2.Print();
     set_3.Print();
+    set<int> result;
+        cout<<endl;
+    result = union_set(set_1,set_2);
+    for(set<int> ::iterator i = result.begin(); i != result.end(); i++)
+    {
+        cout<<*i<<' ';
+    }
+        cout<<endl;
+    result = intersection_set(set_1,set_2);
+    for(set<int> ::iterator i = result.begin(); i != result.end(); i++)
+    {
+        cout<<*i<<' ';
+    }
+    cout<<endl;
+    result = difference_set(set_1,set_2);
+    for(set<int> ::iterator i = result.begin(); i != result.end(); i++)
+    {
+        cout<<*i<<' ';
+    }
+        cout<<endl;
+    result = symmetric_difference_set(set_1,set_2);
+    for(set<int> ::iterator i = result.begin(); i != result.end(); i++)
+    {
+        cout<<*i<<' ';
+    }
     return 0;
 }

@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     Time time1, time2;
-    time1.SetHour(22); time1.SetMinutes(10); time1.SetSeconds(42);
+    time1.SetHour(25); time1.SetMinutes(10); time1.SetSeconds(42);
     time2.SetHour(12); time2.SetMinutes(30); time2.SetSeconds(5);
     time1.PrintTime();
     time2.PrintTime();
