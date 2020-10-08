@@ -11,13 +11,13 @@ Train station[st_size];
 
 static string cities[] =
 {
-    "Cherkasy", "Chernivtsi", "Chernihiv",
-    "Dnipro",
-    "Herson",
-    "Kharkiv", "Kyiv",
-    "Odesa",
-    "Poltava",
-    "Zaporozhia"
+    "Alushta", "Moskva", "Simpheropol",
+    "Yalta",
+    "Adler",
+    "Anapa", "Sevastopol",
+    "Ekaterenburg",
+    "Vladivostok",
+    "Chelabinsk"
 };
 
 string random_city()
@@ -86,6 +86,7 @@ void dest_sort(Train station[st_size]) {
 void search_train(Train station[st_size]) {
     int buff_id = -1;
     int train_id = 0;
+    cout<<endl;
     do {
     cout << "Please input train ID for getting info" << endl;
     cin >> train_id;
@@ -107,16 +108,19 @@ int main()
 {
     srand(time(nullptr));
     int id;
+    cout<<endl;
     cout << "Randomly generated array of trains\n";
     for (int i = 0; i < st_size; i++) {
         auto_fill(station[i]);
         cout << station[i].GetInfo() << endl;
     }
+    cout<<endl;
     cout << "Sorted array of trains by ID\n";
     ID_sort(station);
     for (int i = 0; i < st_size; i++) {
         cout << station[i].GetInfo() << endl;
     }
+    cout<<endl;
     cout << "Sorted array of trains by destination\n";
     dest_sort(station);
     for (int i = 0; i < st_size; i++) {
