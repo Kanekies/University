@@ -126,4 +126,5 @@ int main()
     for (int i = 0; i < st_size; i++) {
         cout << station[i].GetInfo() << endl;
     }
+    search_train(station);
 }
