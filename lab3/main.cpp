@@ -11,12 +11,12 @@
 #include <sstream>
 int main()
 {
-    Human *h = new Human("Ilya", "Kubariev", "Aleksandrovich");
-    Employee *e = new Employee("Ilya", "Kubariev", "Aleksandrovich", 1000000, 1);
-    Footballer *f = new Footballer("Ilya", "Kubariev", "Aleksandrovich", 44);
-    Basketballer *b = new Basketballer("Ilya", "Kubariev", "Aleksandrovich", 201);
-    Prof_Footballer *pf = new Prof_Footballer("Ilya", "Kubariev", "Aleksandrovich", 45, 2000000, 2, "LW", 6);
-    Prof_Basketballer* pb = new Prof_Basketballer("Ilya", "Kubariev", "Aleksandrovich", 45, 2000000, 2, "Sniper", "LA_Lakers");
+    Human *h = new Human("Gleb", "Semyatichko", "Eduardovich");
+    Employee *e = new Employee("Gleb", "Semyatichko", "Eduardovich", 1000000, 1);
+    Footballer *f = new Footballer("Gleb", "Semyatichko", "Eduardovich", 44);
+    Basketballer *b = new Basketballer("Gleb", "Semyatichko", "Eduardovich", 201);
+    Prof_Footballer *pf = new Prof_Footballer("Gleb", "Semyatichko", "Eduardovich", 45, 2000000, 2, "LW", 6);
+    Prof_Basketballer* pb = new Prof_Basketballer("Gleb", "Semyatichko", "Eduardovich", 45, 2000000, 2, "Sniper", "LA_Lakers");
     h->show();
     cout << endl;
     e->show();
