@@ -24,7 +24,7 @@ const Transport&  Transport::operator= (const Transport& t)
 
 const Transport  Transport::operator+(const Transport& t1)
 {
-    if (this->route_id != t1.route_id) return *this;
+    this->route_id+=t1.route_id;
     this->route_distance += t1.route_distance;
     this->route_time += t1.route_time;
     return *this;

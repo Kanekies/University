@@ -2,21 +2,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
-
-
-bool operator==(const Transport& t1, const Transport& t2)
-{
-    if (t1.route_id == t2.route_id && t1.route_distance == t2.route_distance && t1.route_time == t2.route_time) return true;
-    return false;
-}
-
-const Transport operator+(const Transport& t1, const Transport& t2)
-{
-    if (t2.route_id != t1.route_id) return t1;
-    return Transport(t1.route_id, t1.route_distance + t2.route_distance, t1.route_time + t2.route_time);
-}
-
 int main()
 {
     Transport tramvay("12", 27.55, 75);

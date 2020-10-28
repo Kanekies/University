@@ -5,7 +5,7 @@
     {
         this->height = height;
     }
-    void Basketballer::Basketballer::show()
+    void Basketballer::show()
     {
         Human::show();
         cout << " " << this->height;
