@@ -4,7 +4,7 @@
 #include <string>
 #include<iostream>
 using namespace std;
-class Basketballer : public Human {
+class Basketballer : virtual public Human {
 public:
     Basketballer(string last_name, string name, string second_name, int height);
     virtual void show();

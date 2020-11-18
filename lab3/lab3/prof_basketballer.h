@@ -5,7 +5,7 @@
 #include <string>
 #include<iostream>
 using namespace std;
-class Prof_Basketballer : private Basketballer, public Employee {
+class Prof_Basketballer : private Basketballer, virtual public Employee {
 public:
     Prof_Basketballer(string last_name, string name, string second_name,
         int height, int salary, int age_of_experience, string position, string team);

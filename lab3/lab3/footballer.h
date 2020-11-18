@@ -3,7 +3,7 @@
 #include "human.h"
 #include <string>
 #include<iostream>
-class Footballer : public Human {
+class Footballer : virtual public Human {
 public:
     Footballer(string last_name, string name, string second_name, int size_of_foot);
     virtual void show();
