@@ -8,7 +8,7 @@ using namespace std;
 class Employee : private Human {
 public:
     Employee(string last_name, string name, string second_name, int salary, int age_experience);
-    void show();
+    virtual void show();
 private:
     int salary;
     int age_experience;

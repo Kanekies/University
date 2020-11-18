@@ -7,7 +7,7 @@ using namespace std;
 class Basketballer : public Human {
 public:
     Basketballer(string last_name, string name, string second_name, int height);
-    void show();
+    virtual void show();
 private:
     int height;
 };

@@ -9,7 +9,7 @@ class Prof_Footballer : private Footballer, public Employee {
 public:
     Prof_Footballer(string last_name, string name, string second_name,
         int size_of_foot, int salary, int age_of_experience, string position, int number_of_trophies);
-    void show();
+    virtual void show();
 private:
     string position;
     int number_of_trophies;

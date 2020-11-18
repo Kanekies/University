@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-    Transport t1("Tramvay", "12", 27.55, 75);
-    Transport t2("Trollybus", "17", 13.6, 57);
+    Transport t1("IBM", "12", 27.55, 75);
+    Transport t2("Microsoft", "17", 13.6, 57);
     Transport t3;
     cin>>t3;
     cout<<t3<<endl;

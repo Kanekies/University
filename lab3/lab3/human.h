@@ -7,7 +7,7 @@ class Human
 {
 public:
     Human(string last_name, string name, string second_name);
-    void show();
+    virtual void show();
 private:
     string name;
     string last_name;
