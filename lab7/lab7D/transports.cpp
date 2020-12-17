@@ -21,29 +21,43 @@ bool isAvailable(string fileName, int index){
     return false;
 }
 
-vector<string> split_string(const string& str, const string& delim)
-{
+vector<string> split_string(const string& line, const string& delimeter){
     vector<string> tokens;
-    size_t prev = 0, pos = 0;
+    size_t previous = 0, position = 0;
     do
     {
-        pos = str.find(delim, prev);
-        if (pos == string::npos) pos = str.length();
-        string token = str.substr(prev, pos-prev);
-        if (!token.empty()) tokens.push_back(token);
-        prev = pos + delim.length();
+        position = line.find(delimeter, previous);
+        if (position == string::npos)
+            position = line.length();
+        string token = line.substr(previous, position - previous);
+        if (!token.empty())
+            tokens.push_back(token);
+        previous = position + delimeter.length();
     }
-    while (pos < str.length() && prev < str.length());
+    while (position < line.length() && previous < line.length());
     return tokens;
 }
+
 Transport Transports::readFromFile(string fileName){
     Transport *result = new Transport();
-    cout << "Enter index of \"Transport\": ";
     int index = -1;
-    cin >> index;
+    while(true){
+        try {
+            cout <<  "Enter index: ";
+            cin >> index;
+            break;
+        }  catch (exception& ex) {
+            cin.clear();
+            cin.ignore(32767, '\n');
+            cout << ex.what() << endl;
+            continue;
+        }
+    }
     if(isAvailable(fileName, index)){
         ifstream fin;
         fin.open(fileName);
+        if(fin.fail())
+            throw "Cannot read file with name: " + fileName;
         for(int i = 0; i <= index; i++){
             string line;
             getline(fin, line);
@@ -53,6 +67,9 @@ Transport Transports::readFromFile(string fileName){
             }
         }
         fin.close();
+    }
+    else {
+        throw "Not available index";
     }
     return *result;
 }
@@ -67,10 +84,30 @@ void Transports::readAllFromConsole(){
         int time;
         cout << "Enter \"" << i << "\" id: ";
         cin >> id;
-        cout << "Enter \"" << i << "\" distance: ";
-        cin >> distance;
-        cout << "Enter \"" << i << "\" time: ";
-        cin >> time;
+        while(true){
+            try {
+                cout <<  "Enter \"" << i << "\" distance: ";
+                cin >> distance;
+                break;
+            }  catch (exception& ex) {
+                cin.clear();
+                cin.ignore(32767, '\n');
+                cout << ex.what() << endl;
+                continue;
+            }
+        }
+        while(true){
+            try {
+                cout <<  "Enter \"" << i << "\" time: ";
+                cin >> time;
+                break;
+            }  catch (exception& ex) {
+                cin.clear();
+                cin.ignore(32767, '\n');
+                cout << ex.what() << endl;
+                continue;
+            }
+        }
         this->transports.push_back(*(new Transport(id, distance, time)));
     }
 }
@@ -79,6 +116,10 @@ void Transports::readAllFromFile(string fileName){
     string line;
     ifstream fin;
     fin.open(fileName);
+    if(fin.fail())
+    {
+        throw "Cannot read file with name: " + fileName;
+    }
     this->transports.clear();
     while(!fin.eof()){
         getline(fin, line);
@@ -95,10 +136,7 @@ void Transports::writeAllToConsole(){
 void Transports::writeAllToFile(string fileName){
     ofstream fout;
     fout.open(fileName);
-    for_each(this->transports.begin(), this->transports.end() - 1, [&](Transport t)
-    {
-        fout << t.get_info() << endl;
-    });
+    for_each(this->transports.begin(), this->transports.end() - 1, [&](Transport t){ fout << t.get_info() << endl; });
     fout << this->transports[this->transports.size() - 1].get_info();
     fout.close();
 }
