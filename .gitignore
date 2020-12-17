@@ -8,3 +8,13 @@
 *.sln
 *.userprefs
 .vs
+*.obj
+*.resources
+*.cache
+*.pdb
+*.ldb
+*.vcxproj
+*.vcxproj.filters
+*.resx
+*.exe
+*.exe.metagen
