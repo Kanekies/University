@@ -1,0 +1,20 @@
+﻿  eat.cpp
+D:\Programming\2020\Kursa\eat.cpp(44,28): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\Programming\2020\Kursa\eat.cpp(45,19): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+D:\Programming\2020\Kursa\eat.cpp(45,16): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+  game.cpp
+  snake.cpp
+D:\Programming\2020\Kursa\snake.cpp(9,16): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+D:\Programming\2020\Kursa\snake.cpp(20,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
+D:\Programming\2020\Kursa\snake.cpp(23,19): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+D:\Programming\2020\Kursa\snake.cpp(23,16): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+  wall.cpp
+D:\Programming\2020\Kursa\wall.cpp(27,20): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+D:\Programming\2020\Kursa\wall.cpp(27,16): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+D:\Programming\2020\Kursa\wall.cpp(28,20): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+D:\Programming\2020\Kursa\wall.cpp(28,16): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+  Source.cpp
+D:\фото для меня\test\test\Source.cpp(106,27): warning C4018: <: несоответствие типов со знаком и без знака
+D:\фото для меня\test\test\Source.cpp(109,51): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  test.vcxproj -> D:\фото для меня\test\Debug\test.exe

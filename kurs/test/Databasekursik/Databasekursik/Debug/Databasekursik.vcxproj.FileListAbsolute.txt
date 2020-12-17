@@ -1,0 +1,3 @@
+D:\фото для меня\test\Databasekursik\Databasekursik\Debug\Databasekursik.vcxprojAssemblyReference.cache
+D:\фото для меня\test\Databasekursik\Databasekursik\Debug\Databasekursik.MyForm.resources
+D:\фото для меня\test\Databasekursik\Databasekursik\Debug\Databasekursik.vcxproj.GenerateResource.cache
