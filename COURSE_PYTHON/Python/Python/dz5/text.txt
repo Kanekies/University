@@ -1,0 +1,6 @@
+apple, word, apple, sousage, picture
+neruda, neruda, neruda, neruda, aconin
+print, help, dehair, dehair, print
+coin, pie, cream, buldog, coin, pie
+google, fox, fox, wolf
+phone, mouse, keyboard, screen, cover, name
