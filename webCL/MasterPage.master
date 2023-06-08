@@ -1,0 +1,118 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Система управління даними пацієнтів</title>
+<meta name="description" content="Medical website">
+<meta name="keywords" content="jewelry, watches">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="1">
+        <div style="position:absolute; width:302px; top:30px; background:url(images/cn-bg.gif);">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1"><img src="images/logo.gif" alt="" width="61" height="61" class="logo"></td>
+    <td class="company_name">МІС Пацієнт</td>
+  </tr>
+</table>
+        </div>
+        <div id="slogan">
+            Кваліфікована медична допомога</div>
+        <img src="images/p1.jpg" alt="" width="666" height="196"></td>
+        <td class="hbg">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="100%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="188" valign="top">
+        <div style="position:relative; top:-69px; width:188px;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="mbg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="images/spacer.gif" alt="" width="1" height="14"></td>
+      </tr>
+      <tr>
+        <td class="menu"><a href="Default.aspx">Головна</a></td>
+      </tr>
+      <tr>
+        <td height="1"><img src="images/m-sep0.gif" width="188" height="1"></td>
+      </tr>
+      <tr>
+        <td class="menu"><a href="Graphic.aspx">Графік прийому</a></td>
+      </tr>
+      <tr>
+        <td height="1"><img src="images/m-sep.gif" width="188" height="1"></td>
+      </tr>
+      <tr>
+        <td class="menu"><a href="User.aspx">Пацієнтам</a></td>
+      </tr>
+      <tr>
+        <td height="1"><img src="images/m-sep.gif" width="188" height="1"></td>
+      </tr>
+      <tr>
+        <td class="menu"><a href="Admin.aspx">Персонал</a></td>
+      </tr>
+     
+      <tr>
+        <td><img src="images/spacer.gif" alt="" width="1" height="12"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#FFFFFF"><img src="images/m-bottom.gif" alt="" width="156" height="110"></td>
+  </tr>
+</table>
+
+        </div>
+        </td>
+        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><h1>Ласкаво просимо до системи управління даними пацієнтів!</h1></td>
+          </tr>
+          <tr>
+            <td class="c-sep-bg"><img src="images/w17.gif" alt="" width="17" height="1"></td>
+          </tr>
+          <tr>
+            <td class="body_txt">
+            <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#0b7ca9" class="bot-bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="bottom_menu"><a href="Default.aspx">Головна</a>  |  <a href="Graphic.aspx">График приема</a>  |  <a href="User.aspx">Пациентам</a>  |  <a href="Admin.aspx">Персонал</a>  </td>
+      </tr>
+      <tr>
+        <td class="bottom_addr">&copy; 2023 МІС Пацієнт. All Rights Reserved</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+    
+</body>
+</html>
